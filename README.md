@@ -1,9 +1,9 @@
-<img src="img/vai-ports.png">
-<img src="img/vai-specs.png">
-
 # Gitter
 
 https://gitter.im/Microsoft/vision-ai-developer-kit
+
+<img src="img/vai-ports.png">
+<img src="img/vai-specs.png">
 
 # Setup
 
