@@ -1,4 +1,5 @@
-<img src="img/vai-kit.png">
+<img src="img/vai-ports.png">
+<img src="img/vai-specs.png">
 
 # Gitter
 
@@ -7,14 +8,15 @@ https://gitter.im/Microsoft/vision-ai-developer-kit
 # Setup
 
 1
+
 https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/#configure-your-camera-to-connect-to-azure-as-an-iot-edge-device
 
 get iot edge connection string
-HostName=iot-hub-vai.azure-devices.net;DeviceId=edge-test-vai;SharedAccessKey=WpEINOvn9dgLk1aUMFFxYbdNTq7i76e2ciG0QolJNxY=
 
 `brew install homebrew/cask/android-platform-tools`
 
 2
+
 vision ai model for edge
 https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/#
 
@@ -29,6 +31,18 @@ https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/
 
 rtsp://<IP address>:8900/live
 
+
+LOGS
+
+https://azure.github.io/Vision-AI-DevKit-Pages/docs/Review_logs/
+
+```
+adb shell docker logs -f edgeAgent
+After you see a “Start module (your module name)” message, you can use
+
+adb shell docker logs -f <your module name>
+to review logs for your module(s).
+```
 
 # Can SSH
 grdegr
