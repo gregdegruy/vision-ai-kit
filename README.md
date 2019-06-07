@@ -29,7 +29,9 @@ Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
 
 https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/
 
-rtsp://<IP address>:8900/live
+`rtsp://<IP address>:8900/live` VLC broken?
+
+`http://<IP address>:3000/` works in browser   
 
 
 LOGS
@@ -45,10 +47,6 @@ to review logs for your module(s).
 ```
 
 # Can SSH
-grdegr
-
-lorule password
-
 commands on board `curl`, `docker`,  `sftp`, `vi`
 
 directories
