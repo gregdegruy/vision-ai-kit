@@ -25,7 +25,7 @@ Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.1.0-arm32v7
 
 |   |   |
 |---|---|
-|<img src="img/sonic-jin.png">|<img src="img/reidoko.png">|
+|<img src="img/sonic-jin.png" height="512">|<img src="img/reidoko.png" height="512">|
 
 [VisionSample](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/#)
 ```
