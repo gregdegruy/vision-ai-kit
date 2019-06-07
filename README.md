@@ -1,40 +1,45 @@
-# Gitter
-
-https://gitter.im/Microsoft/vision-ai-developer-kit
-
-<img src="img/vai-ports.png">
-<img src="img/vai-specs.png">
+|   |   |
+|---|---|
+|<img src="img/vai-ports.png">|<img src="img/vai-specs.png">|
 
 # Setup
 
-1
+[Quick Start](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/#configure-your-camera-to-connect-to-azure-as-an-iot-edge-device)
 
-https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/#configure-your-camera-to-connect-to-azure-as-an-iot-edge-device
+[Stream](https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/)
+```
+rtsp://<IP address>:8900/live
+^ VLC broken?
 
-get iot edge connection string
+http://<IP address>:3000/
+^ works in browser
+```
 
-`brew install homebrew/cask/android-platform-tools`
+# Models I've used
 
-2
+AIVisionDevKitGetStartedModule
+```
+Name - AIVisionDevKitGetStartedModule
+Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.1.0-arm32v7
+```
 
-vision ai model for edge
-https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/#
+|   |   |
+|---|---|
+|<img src="img/vai-ports.png">|<img src="img/vai-specs.png">|
 
+[VisionSample](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/#)
 ```
 Name - VisionSample
 Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
 ```
 
-3
+WebStreamModule
+```
+Name - WebStreamModule
+Image URI - drwedgecr.azurecr.io/webstreammodule:0.0.12-arm32v7
+```
 
-https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/
-
-`rtsp://<IP address>:8900/live` VLC broken?
-
-`http://<IP address>:3000/` works in browser   
-
-
-LOGS
+# LOGS
 
 https://azure.github.io/Vision-AI-DevKit-Pages/docs/Review_logs/
 
@@ -46,7 +51,7 @@ adb shell docker logs -f <your module name>
 to review logs for your module(s).
 ```
 
-# Can SSH
+# SSH
 commands on board `curl`, `docker`,  `sftp`, `vi`
 
 directories
@@ -94,6 +99,6 @@ directories
 
 
 # References
-Documentation for the Microsoft Vision AI Developer kit can be found on GitHub at https://aka.ms/VisionAIDocs
-
-Join the Microsoft AI Developer Tech Community for support, conversations with other Microsoft Vision AI developers and more at https://aka.ms/VisionAITechComm
+* Microsoft Vision AI Developer kit docs https://aka.ms/VisionAIDocs
+* [Gitter](https://gitter.im/Microsoft/vision-ai-developer-kit)
+* Join the Microsoft AI Developer Tech Community for support, conversations with other Microsoft Vision AI developers and more at https://aka.ms/VisionAITechComm
