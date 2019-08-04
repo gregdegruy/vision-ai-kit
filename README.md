@@ -6,7 +6,9 @@
 
 # Setup
 
-[Quick Start](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/#configure-your-camera-to-connect-to-azure-as-an-iot-edge-device) then [Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/#)
+[Quick Start](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/#configure-your-camera-to-connect-to-azure-as-an-iot-edge-device) then [Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/#). [Take pictures](https://azure.github.io/Vision-AI-DevKit-Pages/docs/train/#take-pictures-with-the-camera) with the camera.
+
+Managing the device with the Android Debug Bridge, `./adb.exe devices` to confirm device is connected to your machine, `./adb.exe shell ifconfig wlan0` to view the devices ip.
 
 [Stream](https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/) only one per browser session
 ```
@@ -20,6 +22,13 @@ http://<IP address>:3000/
 # Models I've used
 
 MyMXCHIP Model
+
+AIVisionDevKitGetStartedModule
+```
+Name - AIVisionDevKitGetStartedModule
+Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.1.0-arm32v7
+```
+use `visionsamplemodule:latest` for latest
 
 Container create default options
 
@@ -55,13 +64,6 @@ Default twin's desired properties
 }
 ```
 
-AIVisionDevKitGetStartedModule
-```
-Name - AIVisionDevKitGetStartedModule
-Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.1.0-arm32v7
-```
-use `visionsamplemodule:latest` for latest
-
 |   |   |
 |---|---|
 |<img src="img/sonic-jin.png" height="512">|<img src="img/reidoko.png" height="512">|
@@ -91,8 +93,8 @@ commands on board `curl`, `docker`,  `sftp`, `vi`
 # References
 * [Custom Model](https://www.customvision.ai/)
 * [Custom Model Guide](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/)
-* Microsoft Vision AI Developer kit docs https://aka.ms/VisionAIDocs
+* [Custom Vision Service](https://www.customvision.ai/)
 * [Gitter](https://gitter.im/Microsoft/vision-ai-developer-kit)
 * Join the Microsoft AI Developer Tech Community for support, conversations with other Microsoft Vision AI developers and more at https://aka.ms/VisionAITechComm
-
-https://notebooks.azure.com/home
+* Microsoft Vision AI Developer kit docs https://aka.ms/VisionAIDocs
+* Samples and more in [Microsoft Vision AI repo](https://github.com/Microsoft/vision-ai-developer-kit)
