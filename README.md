@@ -10,6 +10,8 @@
 
 Managing the device with the Android Debug Bridge, `./adb.exe devices` to confirm device is connected to your machine, `./adb.exe shell ifconfig wlan0` to view the devices ip.
 
+To capture pictures with the device follow the README in the python_iotcc_sdk directory.
+
 [Stream](https://azure.github.io/Vision-AI-DevKit-Pages/docs/RTSP_stream/) only one per browser session
 ```
 rtsp://<IP address>:8900/live
