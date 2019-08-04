@@ -1,3 +1,5 @@
+<p align="center"><img src="img/pupadoo.svg"></p>
+
 |   |   |
 |---|---|
 |<img src="img/vai-ports.png">|<img src="img/vai-specs.png">|
@@ -85,50 +87,6 @@ to review logs for your module(s).
 
 # SSH
 commands on board `curl`, `docker`,  `sftp`, `vi`
-
-directories
-```
-/
-    /.
-    /..
-    /WEBSERVER
-    /bin
-    /boot
-    /bt_firmware
-    /build.prop
-    /cache
-    /data
-    /dev
-    /dsp
-    /etc
-    /firmware
-        /firmware/image
-        /firmware/verinfo
-            ver_info.txt
-    /home
-        /home/{usrname}
-        /home/root
-        /home/peadbody
-    /lib
-    /lost+found
-    /media
-    /mnt
-    /persist
-    /proc
-    /run
-    /sbin
-    /sdcard -> /mnt/sdcard
-    /share
-    /sys
-    /system
-    /systemrw
-    /target
-    /tmp -> /var/tmp
-    /usr
-    /var
-    /vendor
-```
-
 
 # References
 * [Custom Model](https://www.customvision.ai/)
